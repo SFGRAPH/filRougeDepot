@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ajoutResa.css">
+    <title>Ajout de réservation</title>
+</head>
+
+<body>
+
+    <div id="bandeauGauche">
+        <a href="#"><img src="siteClient/media-source/source_image/logo.png" alt="logo Mama Betty" class="logo"></a>
+        <nav class="navbar">
+
+            <ul class="navbar_links">
+                <li id="reserver" class="navbar-link"><a href="back-office.html" id="reservation"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="27" height="36" viewBox="0 0 27 36">
+                            <path id="Icon_awesome-clipboard-list" data-name="Icon awesome-clipboard-list"
+                                d="M23.625,4.5H18a4.5,4.5,0,1,0-9,0H3.375A3.376,3.376,0,0,0,0,7.875v24.75A3.376,3.376,0,0,0,3.375,36h20.25A3.376,3.376,0,0,0,27,32.625V7.875A3.376,3.376,0,0,0,23.625,4.5ZM6.75,29.813a1.688,1.688,0,1,1,1.688-1.688A1.683,1.683,0,0,1,6.75,29.813Zm0-6.75a1.687,1.687,0,1,1,1.688-1.687A1.683,1.683,0,0,1,6.75,23.062Zm0-6.75a1.688,1.688,0,1,1,1.688-1.687A1.683,1.683,0,0,1,6.75,16.313Zm6.75-13.5A1.687,1.687,0,1,1,11.813,4.5,1.683,1.683,0,0,1,13.5,2.813Zm9,25.875a.564.564,0,0,1-.562.563H11.813a.564.564,0,0,1-.563-.563V27.563A.564.564,0,0,1,11.813,27H21.938a.564.564,0,0,1,.562.563Zm0-6.75a.564.564,0,0,1-.562.563H11.813a.564.564,0,0,1-.563-.562V20.813a.564.564,0,0,1,.563-.562H21.938a.564.564,0,0,1,.562.563Zm0-6.75a.564.564,0,0,1-.562.563H11.813a.564.564,0,0,1-.563-.562V14.062a.564.564,0,0,1,.563-.562H21.938a.564.564,0,0,1,.562.562Z" />
+                        </svg>
+                        &nbsp;&nbsp;RÉSERVATION</a></li>
+
+                <li id="modCarte" class="navbar-link"><a href="modifCarte.html"><svg xmlns="http://www.w3.org/2000/svg" width="34"
+                            height="32.285" viewBox="0 0 34 32.285">
+                            <path id="Icon_material-restaurant-menu" data-name="Icon material-restaurant-menu"
+                                d="M13.641,22.849l5.032-5.032L6.19,5.352a7.126,7.126,0,0,0,0,10.064ZM25.7,19.631c2.721,1.262,6.544.373,9.371-2.454,3.4-3.4,4.054-8.268,1.44-10.882-2.6-2.6-7.468-1.956-10.882,1.44-2.827,2.827-3.716,6.65-2.454,9.371L5.817,34.46l2.507,2.507L20.576,24.752,32.809,36.985l2.507-2.507L23.083,22.244Z"
+                                transform="translate(-4.11 -4.7)" />
+                        </svg>
+                        &nbsp;&nbsp;CARTES</a></li>
+
+                <li id="modFormule" class="navbar-link"><a href="modifFormule.html"><svg xmlns="http://www.w3.org/2000/svg" width="34"
+                            height="29.805" viewBox="0 0 34 29.805">
+                            <path id="Icon_map-food" data-name="Icon map-food"
+                                d="M34.645,10.78,31.858,32.629H22.443L19.667,10.671H31.161l2.272-7.846,1.288.388-2.18,7.551,2.1.016ZM18.336,23.421s.352-2.833-4.53-2.833H6.032c-4.875,0-4.53,2.833-4.53,2.833H18.336ZM1.5,29.8s-.345,2.833,4.53,2.833h7.775c4.882,0,4.53-2.833,4.53-2.833H1.5Zm16.1-1.417a1.629,1.629,0,0,0,1.444-1.77,1.627,1.627,0,0,0-1.444-1.772H2.165A1.63,1.63,0,0,0,.72,26.609a1.632,1.632,0,0,0,1.445,1.77H17.606Z"
+                                transform="translate(-0.72 -2.825)" />
+                        </svg>
+                        &nbsp;&nbsp;FORMULES</a></li>
+
+                <li id="message" class="navbar-link"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30"
+                            height="30" viewBox="0 0 30 30">
+                            <path id="Icon_material-message" data-name="Icon material-message"
+                                d="M30,3H6A3,3,0,0,0,3.015,6L3,33l6-6H30a3.009,3.009,0,0,0,3-3V6A3.009,3.009,0,0,0,30,3ZM27,21H9V18H27Zm0-4.5H9v-3H27ZM27,12H9V9H27Z"
+                                transform="translate(-3 -3)" />
+                        </svg>
+                        &nbsp;&nbsp;MESSAGERIE</a></li>
+
+                <li id="gestionUtilisateur" class="navbar-link"><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="36.002" height="36.004" viewBox="0 0 36.002 36.004">
+                            <path id="Icon_awesome-tools" data-name="Icon awesome-tools"
+                                d="M35.234,27.823,27,19.589a5.221,5.221,0,0,0-6-.977l-7.5-7.5V6.75L4.5,0,0,4.5l6.75,9h4.366l7.5,7.5a5.232,5.232,0,0,0,.977,6l8.234,8.234a2.614,2.614,0,0,0,3.705,0l3.705-3.705a2.627,2.627,0,0,0,0-3.705Zm-11.911-12A7.4,7.4,0,0,1,28.589,18l1.364,1.364a9.953,9.953,0,0,0,3.08-2.074A10.112,10.112,0,0,0,35.7,7.678a.842.842,0,0,0-1.413-.387l-5.231,5.231-4.774-.795-.795-4.774,5.231-5.231a.849.849,0,0,0-.4-1.42,10.129,10.129,0,0,0-9.6,2.665,9.964,9.964,0,0,0-2.9,7.284l5.773,5.773a7.66,7.66,0,0,1,1.737-.2Zm-7.305,5.766L12.03,17.6,1.315,28.322a4.5,4.5,0,0,0,6.363,6.363l8.691-8.691a7.551,7.551,0,0,1-.352-4.409ZM4.5,33.188A1.688,1.688,0,1,1,6.188,31.5,1.692,1.692,0,0,1,4.5,33.188Z"
+                                transform="translate(0.004)" />
+                        </svg>
+                        &nbsp;&nbsp;PARAMÈTRES</a></li>
+            </ul>
+
+        </nav>
+
+    </div>
+
+    <main>
+
+        <div class="message">
+            <p class="Bienvenue">AJOUT DE RESERVATION </p>
+            <div id="date"></div>
+        </div>
+
+
+        <div id="resaContainer"></div>
+
+
+    </main>
+
+
+
+
+    <script src="ajoutResa.js"></script>
+
+</body>
+
+</html>

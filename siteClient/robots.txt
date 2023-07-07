@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /reservation.html
+Disallow: /newsletter.html
+Disallow: /emporter.html
+Disallow: /contact.html
+Disallow: /formule-du-jour.html
+Disallow: /politiqueConf.html
+Disallow: /mentionsLegales.html

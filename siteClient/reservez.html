@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reservez.css">
+    <title>Formulaire de reservation</title>
+</head>
+
+<body>
+
+    <header>
+        
+        <nav class="navbar dark-mode">
+            <div class="navbar__logo"> <a href="index.html?chargement=non"><img src="media-source/source_image/logo.png" loading="lazy"
+                        alt="logo mama betty" class="logo"></a> </div>
+            <ul class="navbar__links">
+                <li class="navbar__link first"><a href="emporter.html">EMPORTER</a></li>
+                <li class="navbar__link second"><a href="reservation.html">RESERVATION</a></li>
+                <li class="navbar__link third"><a href="carte-hiver.html">CARTE SUR PLACE</a></li>
+                <li class="navbar__link four"><a href="#points-fort"><em>NOS POINTS FORTS</em></a></li>
+                <li class="navbar__link fifth"><a href="#histoire"><em>NOTRE HISTOIRE</em></a></li>
+                <li class="navbar__link third"><a href="#partenaire">NOS ENSEIGNES</a></li>
+                <li class="navbar__link sixth"><a href="#contact">CONTACT</a></li>
+                <li class="navbar__link ubere"><a
+                        href="https://www.ubereats.com/fr/store/mama-betty/KRcLT19uT8CwTptuVFn8LQ?diningMode=DELIVERY&pl=JTdCJTIyYWRkcmVzcyUyMiUzQSUyMkxheG91JTIyJTJDJTIycmVmZXJlbmNlJTIyJTNBJTIyQ2hJSndfSUhfbzJpbEVjUndBakF0bXlPT0lNJTIyJTJDJTIycmVmZXJlbmNlVHlwZSUyMiUzQSUyMmdvb2dsZV9wbGFjZXMlMjIlMkMlMjJsYXRpdHVkZSUyMiUzQTQ4LjY4NDI1NiUyQyUyMmxvbmdpdHVkZSUyMiUzQTYuMTUyNTI1JTdE"
+                        target="_blank"> <img src="media-source/source_image/SVG/Uber-Eats.svg" rel="noopener"
+                            loading="lazy" alt="logo Uber Eat" width="90" height="90"></a></li>
+            </ul>
+            <button class="burger"> <span class="bar"></span> </button>
+        </nav>
+    </header>
+
+
+    <section id="civilite">
+        
+        <form action="">
+
+            <div class="selectCivilite">
+                <input type="radio" name="" id="dej">DÉJEUNER
+                <input type="radio" name="" id="din">DÎNNER
+            </div>
+
+            <select name="nbrCouvert" id="nbrCouvert">
+                <option value="">nbr de couverts</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+
+            <br>
+            <br>
+
+            <input type="date" name="selectDate" id="selectDate">
+
+            <div id="heureDiv"></div>
+            <br>
+            <input type="submit" value="VALIDER" id="validationR">
+
+
+        </form>
+
+    </section>
+    
+
+    <script src="menu.js"></script>
+    <script src="reservez.js"></script>
+</body>
+
+</html>

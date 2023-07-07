@@ -1,0 +1,199 @@
+* {
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #000000;
+}
+
+.croix {
+    position: absolute;
+    margin: 20px;
+    margin-top: 30px;
+    left: 83vw;
+}
+
+img {
+    display: block;
+    width: 95%;
+    margin: auto;
+    margin-top: 20px;
+
+}
+
+a .logo {
+    margin: 15px;
+
+}
+
+.container-header {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+
+}
+
+header {
+    width: 100%;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.titre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.titre h1 {
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    border: 3px solid #000;
+    background: #D2B69C;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+
+}
+
+.titre h2 {
+    font-size: 16px;
+}
+
+.titre h2 span {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #E52825;
+    font-style: italic;
+}
+
+.titre h2 a {
+    color: #D2B69C;
+}
+
+.N1,
+.N2,
+.N3,
+.N4,
+.N5,
+.N6,
+.N7,
+.N8 {
+    width: 90vw;
+    display: block;
+    margin: auto;
+    border: 2px solid #000;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    background: #D2B69C;
+
+}
+
+.version {
+    margin-left: 5vw;
+}
+
+h2 {
+    color: #D2B69C;
+    font-size: 18px;
+    background: #000;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.descr {
+    margin-top: 10px;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.nom span {
+    font-size: 16px;
+    font-weight: 800;
+
+}
+
+.burger {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.burger img {
+    margin-left: 20px;
+}
+
+.veggie {
+    color: green;
+}
+
+footer {
+    text-align: center;
+    font-size: 10px;
+    margin: 5px;
+}
+
+
+@media screen and (min-width:599px) {
+    main {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 20px;
+    }
+
+    .N1,
+    .N2,
+    .N3,
+    .N4,
+    .N5,
+    .N6,
+    .N7,
+    .N8 {
+        width: 45vw;
+        padding: 20px;
+
+    }
+
+    .titre h1 {
+        font-size: 52px;
+    }
+
+    .titre h2 span {
+        font-size: 22px;
+    }
+
+    .titre h2 a {
+        font-size: 22px;
+    }
+    
+    img {
+        display: block;
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+    
+    }
+    
+    .croix{
+        margin-top:40px;
+        left:85vw;
+    }
+
+}

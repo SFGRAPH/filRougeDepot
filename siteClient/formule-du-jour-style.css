@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #feedcd;
+
+}
+
+
+body {
+    background: #000000;
+}
+
+.croix {
+    margin: 20px;
+    width: 30px;
+    height: 30px;
+}
+
+.logo {
+    margin: 15px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+h1 {
+    font-family: Arial, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 30px;
+    text-align: center;
+    margin: 10px;
+}
+
+h1 span {
+    color: #E52825;
+    font-style: italic;
+}
+
+h2 {
+    font-family: "oskar", sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    font-style: italic;
+    color: #E52825;
+    margin: 5px;
+}
+
+main {
+    width: 100vw;
+}
+
+.semaine .N1 {
+    display: none;
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.semaine .N2 {
+    width: 100%;
+}
+
+
+@media screen and (min-width:389.98px) {}
+
+@media screen and (min-width:767.98px) {
+
+    main h1 {
+        font-size: 60px
+    }
+
+    main h2 {
+        font-size: 50px;
+    }
+
+    .semaine .N1 {
+        display: block;
+        width: 90vw;
+        border: 10px;
+        margin-top: 20px;
+
+    }
+
+    .semaine .N2 {
+        display: none;
+    }
+
+
+}
+
+
+@media screen and (min-width:900px) {
+
+    main h1 {
+        font-size: 75px;
+    }
+
+    main h2 {
+        margin: 20px;
+        font-size: 70px;
+    }
+
+    .semaine .N1 {
+        width: 80vw;
+    }
+}

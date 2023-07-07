@@ -1,0 +1,231 @@
+*,::before, ::after {
+    box-sizing:border-box; 
+    outline:none;
+    margin:0;
+    padding:0;
+    border: none;
+}
+
+html,
+body {
+height: 100%;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+scroll-behavior: smooth;
+color: #feedcd;
+background: #222;
+}
+
+
+main {
+    padding-top: 200px;
+    max-width: 1280px;
+    margin: auto;
+}
+
+main ul {
+    list-style:disc;
+}
+
+h1 {
+    color: #E52825;
+}
+
+/* Variables MENU */
+:root {
+    --font-size:1rem;
+  }
+  .light-mode {
+    --navbar-color: #222;
+    --navbar-bg-color: #F0F0F0;  
+  }
+  .dark-mode {
+    --navbar-color: #feedcd;  
+    --navbar-bg-color: rgba(0, 0, 0, 0.904);  
+  }
+
+  ul {
+    list-style:none;
+  }
+
+
+  /* Navbar */
+.navbar {  
+    display:flex;
+    position: relative;
+    position:fixed;
+    width: 100%;
+    height: 70px;
+    align-items:center; 
+    justify-content:space-between;   
+    padding:15px;
+    font-size:1.4rem;
+    font-weight: 700;
+    background:var(--navbar-bg-color);
+    color:var(--navbar-color);
+    z-index: 1000;
+  }
+  .navbar__links { 
+    display:flex;
+    align-items: center;  
+  }
+  .navbar__link { 
+    padding:0 10px;
+  }
+  .navbar__link > a { 
+    color:var(--navbar-color);
+    text-decoration:none;
+    font-family: "arial",sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 18px;
+  }
+
+  .burger {
+    display:none;
+  }
+
+  .navbar .navbar__logo .logo {
+   
+    width: 100px;
+    margin-top: 60px;
+    cursor: pointer;
+}
+
+.navbar__links .ubere {
+    display:block;
+}
+
+
+/* media query MENU medium */
+@media screen and (max-width:1023.98px) {
+
+    .navbar {
+     padding: 10px;
+    }
+
+    .navbar__links { 
+      padding: 0;
+      overflow:hidden;
+      display:flex;
+      flex-direction:column;
+      width:0;
+      justify-content: center;
+      height:100vh;  
+      position:absolute;
+      top:0px;
+      right:0;     
+      background:var(--navbar-bg-color);     
+      transform: translateX(110%);
+      transition: all .2s ease-in-out;
+    }
+
+    
+
+    .navbar__links .ubere img {
+        width: 120px;
+        height: 120px;
+        
+    }
+
+    .show-nav .navbar__links { 
+      
+      width:100vw;    
+      transform: translateX(0);
+    } 
+
+    .navbar__link {    
+      transform: translateX(101%);
+      transition: all .2s ease-in-out;
+    }
+    
+    .show-nav .navbar__link  {        
+      transform: translateX(0);    
+    }   
+    .navbar__link > a {
+      display:block;
+      padding:1rem;
+		  font-family:Arial,sans-serif;
+      font-weight: 900;
+      font-style: normal;
+      font-size:1.5rem;
+      color:var(--navbar-color);  
+      transition: all .2s ease-in-out;
+    }
+    .navbar__link > a:hover {
+      padding-left:2rem;
+      letter-spacing:5px;
+    }
+
+        /* Toggle menu */
+  
+        .burger {
+            display:block;
+            position:relative;
+            padding:0;
+            width:45px;
+            height:45px;
+            border:none;
+            background:transparent;
+            cursor:pointer;
+          }
+    
+        .bar {
+          display:block;    
+          width:45px;
+          height:4px;  
+          border-radius:3px;
+          background:var(--navbar-color); 
+          transition: all .2s ease-in-out;   
+        }
+    
+        .bar::before, .bar::after {
+          content:"";
+          width:45px;
+          height:4px;
+          position:absolute; 
+          left:0;  
+          background:var(--navbar-color); 
+          border-radius:3px;    
+          transition: all .2s ease-in-out;
+        }
+        .bar::before {
+          transform:translateY(-12px)
+        }
+        .bar::after {
+          transform:translateY(12px)
+        }
+        .show-nav .bar {
+          width:0;
+          background:transparent;    
+        }
+        .show-nav .bar::before {
+          transform:rotate(45deg);
+        }
+        .show-nav .bar::after {
+          transform:rotate(-45deg);
+        }
+        
+        /* Bonus - Animations */
+        .show-nav .first {      
+          transition: all .2s ease-out;
+        } 
+        .show-nav .second {      
+          transition: all .2s ease-out;
+        } 
+        .show-nav .third {      
+          transition: all .2s ease-out;
+        } 
+        .show-nav .four {      
+          transition: all .2s ease-out;
+        } 
+        .show-nav .fifth {      
+          transition: all .2s ease-out;
+        }
+        .show-nav .sixth {
+            transition: all .2s ease-out ;
+        }
+       
+      }
+

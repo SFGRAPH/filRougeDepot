@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="enregistrementResa.css">
+    <title>Enregistrement de réservation</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Récupérer les valeurs du sessionStorage
+            const nbrCouvert = sessionStorage.getItem('nbrCouvert');
+            const selectDate = sessionStorage.getItem('selectDate');
+            const heureSelectionnee = sessionStorage.getItem('heureSelectionnee');
+
+            // Afficher les valeurs dans les champs correspondants
+            document.getElementById('nbrCouvert').textContent = nbrCouvert;
+            document.getElementById('selectDate').textContent = selectDate;
+            document.getElementById('heureSelectionnee').textContent = heureSelectionnee;
+        });
+    </script>
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="navbar dark-mode">
+            <div class="navbar__logo"> <a href="index.html?chargement=non"><img src="media-source/source_image/logo.png"
+                        loading="lazy" alt="logo mama betty" class="logo"></a> </div>
+            <ul class="navbar__links">
+                <li class="navbar__link first"><a href="emporter.html">EMPORTER</a></li>
+                <li class="navbar__link second"><a href="reservation.html">RESERVATION</a></li>
+                <li class="navbar__link third"><a href="carte-hiver.html">CARTE SUR PLACE</a></li>
+                <li class="navbar__link four"><a href="#points-fort"><em>NOS POINTS FORTS</em></a></li>
+                <li class="navbar__link fifth"><a href="#histoire"><em>NOTRE HISTOIRE</em></a></li>
+                <li class="navbar__link third"><a href="#partenaire">NOS ENSEIGNES</a></li>
+                <li class="navbar__link sixth"><a href="#contact">CONTACT</a></li>
+                <li class="navbar__link ubere"><a
+                        href="https://www.ubereats.com/fr/store/mama-betty/KRcLT19uT8CwTptuVFn8LQ?diningMode=DELIVERY&pl=JTdCJTIyYWRkcmVzcyUyMiUzQSUyMkxheG91JTIyJTJDJTIycmVmZXJlbmNlJTIyJTNBJTIyQ2hJSndfSUhfbzJpbEVjUndBakF0bXlPT0lNJTIyJTJDJTIycmVmZXJlbmNlVHlwZSUyMiUzQSUyMmdvb2dsZV9wbGFjZXMlMjIlMkMlMjJsYXRpdHVkZSUyMiUzQTQ4LjY4NDI1NiUyQyUyMmxvbmdpdHVkZSUyMiUzQTYuMTUyNTI1JTdE"
+                        target="_blank"> <img src="media-source/source_image/SVG/Uber-Eats.svg" rel="noopener"
+                            loading="lazy" alt="logo Uber Eat" width="90" height="90"></a></li>
+            </ul>
+            <button class="burger"> <span class="bar"></span> </button>
+        </nav>
+    </header>
+
+    <main>
+        <div class="txtAcc">
+            <p>Chers clients, une place en terrasse ne peut vous être garantie :
+                <br>
+                En cas de mauvais temps ou bien si nous sommes rapidement complets en terrasse,
+                nous vous placerons à l’intérieur. <br>
+                Merci de préciser vos préférences. <br><br>
+                <span>Les réservations sont cloturées durant le service. Merci de nous appeler au 03.83.97.36.17</span>
+            </p>
+        </div>
+        <div id="resa">
+            <p> <span id="nbrCouvert"></span> personnes le <span id="selectDate"></span> à <span
+                    id="heureSelectionnee"></span></p>
+        </div>
+
+        <div class="infoClient">
+
+
+
+            <div class="formClient">
+                <form action="" method="get" id="infoClient">
+
+                    NOM: <input type="text" name="nom" id="name"> <br>
+
+                    PRENOM: <input type="text" name="prénom" id="firstName"> <br>
+
+                    TELEPHONE: <input type="number" name="tel" id="phone"> <br>
+
+                    E-MAIL: <input type="email" name="Email" id="mail"> <br>
+
+                    PRÉFÉRENCES: <select name="pref" id="pref"> <br>
+                        <option value="">-</option>
+                        <option value="interieur">INTERIEUR</option>
+                        <option value="terrasse">TERRASSE</option>
+                    </select>
+                    <div class="accord">
+                        <input type="radio" name="accept" id="acceptation">
+                        <p>J’accepte les conditions générales d’utilisation du service. <span>*</span> </p>
+                    </div>
+                    <br>
+                    <button type="submit" id="soumettre" disabled>RESERVEZ</button>
+
+                </form>
+                <br>
+                <div id="resultat"></div>
+            </div>
+        </div>
+    </main>
+    <script src="menu.js"></script>
+    <script src="enregistrementResa.js"></script>
+</body>
+
+
+
+</html>
