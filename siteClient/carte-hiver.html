@@ -87,8 +87,9 @@
     <header>
         
         <nav class="navbar dark-mode">
-            <div class="navbar__logo"> <a href="index.html?chargement=non"><img src="media-source/source_image/logo_blanc.png"
-                        loading="lazy" alt="logo mama betty" class="logo"></a> </div>
+            <div class="navbar__logo"> <a href="index.html?chargement=non"><img
+                        src="media-source/source_image/logo_blanc.png" loading="lazy" alt="logo mama betty"
+                        class="logo"></a> </div>
 
 
             <ul class="navbar__links">
@@ -108,8 +109,6 @@
 
 
     </header>
-
-
 
 
     <main>
@@ -332,7 +331,7 @@
 
             </div>
             <br>
-        
+
 
             <div id="sdw-burger">
                 <section class="N">
@@ -343,7 +342,7 @@
                     </li>
                     <br>
 
-                    
+
                     <img src="media-source/source_image/Veggie (1).png" alt="logo veggie" width="190">
                     <br>
                     <span class="veggie">VEGGIE BURGER <br><br>
@@ -668,7 +667,7 @@
                 </section>
             </div>
 
-           
+
             <div id="vins">
                 <section class="N">
                     <h2>VINS AU VERRE & PICHETS <br>
@@ -729,7 +728,8 @@
                     <ul>
                         <li class="nom">
                             <span>CHAMPAGNE</span><br>...............................................................9,00
-                            €</li>
+                            €
+                        </li>
                         <li class="descr">Domaine Adrien BERGERE</li>
                     </ul>
                 </section>
@@ -760,7 +760,7 @@
                         <li class="nom"><span>GIVRY</span>.................&thinsp;38,00 €</li>
                         <li class="descr">Domaine Joseph Drouhin.</li>
                         <li><br></li>
-                        
+
                         <li class="nom"><span>CHATEAUNEUF DU PAPE <br>
                                 "TÉLÉGRAMME"</span>...............................54,00 €</li>
                         <li class="descr">Domaine du Vieux Télégraphe.</li>
@@ -783,7 +783,7 @@
                         <li class="nom"><span>DOMAINE DE JOY</span>..............................24,00 €</li>
                         <li class="descr">MOELLEUX - IGP GASCOGNE</li>
                         <li><br></li>
-                        
+
                         <li class="nom"><span>CHARDONNET</span>...................................&thinsp;24,00 €
                         </li>
                         <li class="descr">IGP PAYS D'OC</li>
@@ -925,41 +925,7 @@
 
 
 
-    <script>
-        function toggleMenu() {
-            const navbar = document.querySelector('.navbar');
-            const burger = document.querySelector('.burger');
-
-            burger.addEventListener('click', (e) => {
-                navbar.classList.toggle('show-nav');
-            });
-            // bonus
-            const navbarLinks = document.querySelectorAll('.navbar__links a');
-            navbarLinks.forEach(link => {
-                link.addEventListener('click', (e) => {
-                    navbar.classList.toggle('show-nav');
-                });
-            })
-
-        }
-
-        toggleMenu();
-
-        const titreSpan = document.querySelector('h2 Span')
-        const l1 = document.querySelector('.souligner')
-        const logo = document.querySelector('.logo')
-        const fondEcran = document.querySelector('.header_fond')
-        const fondEcran2 = document.querySelector('.header_fond2')
-        const slogan = document.querySelectorAll('.slogan span')
-
-        window.addEventListener('load', () => {
-
-
-
-
-
-        })
-    </script>
+    <script src="menu.js"></script>
 
 
 

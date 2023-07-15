@@ -1,0 +1,528 @@
+* {
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ed6c84;
+
+}
+
+/*nav_bar*/
+:root {
+    --font-size: 1rem;
+}
+
+.light-mode {
+    --navbar-color: #222;
+    --navbar-bg-color: #F0F0F0;
+}
+
+.dark-mode {
+    --navbar-color: #ffd800;
+    --navbar-bg-color: #006e3bea;
+}
+
+ul {
+    list-style: none;
+}
+
+h2 {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 900;
+    margin-top: 15px;
+    width: 90%;
+    text-align: center;
+    border: 2px solid #ed6c84;
+    background: #ed6c84;
+    border-radius: 10px;
+}
+
+h3 {
+    color: #ffd800;
+    margin-top: 14px;
+    font-size: 16px;
+}
+
+p {
+    color: #FFFFFF;
+    font-style: italic;
+    margin-left: 14px;
+}
+
+section {
+    margin: auto;
+    margin-top: 40px;
+    background-color: #006e3b;
+    border-radius: 15px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    padding-bottom: 20px;
+    scroll-margin: 190px;
+
+}
+
+.prix {
+    margin-top: 5px;
+    color: #ffd800;
+    font-size: 16px;
+}
+
+.version {
+    color: #ffffff;
+    margin-top: 5px;
+}
+
+.version span {
+    color: #ffd800;
+}
+
+.plat {
+    width: 90%;
+}
+
+.description span {
+    color: #ed6c84;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+#menu img{
+    position:relative;
+    margin-left: 45vw;
+    top: 10px;
+    transform: rotate(15deg);
+    margin-bottom: 20px;
+    width: 90px;
+
+    
+}
+
+#dessert .prix {
+    display: none;
+}
+
+#dessert h3 {
+    margin-top: 30px;
+}
+
+#dessert h2 {
+    margin-bottom: 30px;
+}
+
+#dessert .prixDessert {
+    position:relative;
+    margin-left: 45vw;
+    width: 90px;
+    transform: rotate(15deg);
+
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    position: relative;
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    background: var(--navbar-bg-color);
+    color: var(--navbar-color);
+    z-index: 4000;
+}
+
+.navbar__links {
+    display: flex;
+    align-items: center;
+}
+
+.navbar__link {
+    padding: 0 10px;
+}
+
+.navbar__link>a {
+    color: var(--navbar-color);
+    text-decoration: none;
+    font-family: "arial", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 18px;
+}
+
+.burger {
+    display: none;
+}
+
+.navbar .navbar__logo .logo {
+
+    width: 90px;
+    margin-top: 25px;
+    margin-left: 5px;
+    cursor: pointer;
+    z-index: 4000;
+
+}
+
+
+h1 {
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    text-align: center;
+    padding: 15px;
+    color: #ffffff;
+    background: #006e3b;
+    border-radius: 20px;
+    margin-top: 170px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.news {
+    width: 50px;
+    position: relative;
+    display: block;
+    animation: rotation 1.5s ease-in-out infinite;
+    z-index: 5;
+    margin-bottom: 5px;
+}
+
+#menu .prix {
+    display: none;
+}
+
+#glaces ul {
+    display: none;
+}
+
+#pressions .prix {
+    display: none;
+}
+
+#pressions .happyHour{
+    width: 70px;
+    margin-top: 10px;
+    margin-right: 40vw;
+}
+#cocktails .happyHour{
+    width: 70px;
+    margin-top: 10px;
+    margin-right: 40vw;
+}
+
+#salades .prixVin1 {
+    display: none;
+}
+#salades .prixVin2 {
+    display: none;
+}
+#salades .prixVin3 {
+    display: none;
+}
+
+#vins .prix0 {
+    display: none;
+}
+
+#vins .plat{
+    margin-top: 15px;
+}
+
+#vins li{
+    margin-top: 15px;
+}
+
+#bulles .prixVin2 {
+    display: none;
+}
+
+#bulles .prixVin3 {
+    display: none;
+}
+
+#bouteilles .prixVin1{
+    display: none;
+}
+
+#bouteilles .prixVin2{
+    display: none;
+}
+
+#bouteilles .prixVin3{
+    display: none;
+}
+
+#bouteilles li {
+    margin-top: 15px;
+}
+
+
+
+@keyframes rotation {
+
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateZ(360deg);
+    }
+
+}
+
+#carte2023 {
+    display: flex;
+    flex-direction: column;
+}
+
+/* media query MENU medium */
+@media screen and (max-width:1024.98px) {
+
+    .navbar {
+        padding: 20px;
+    }
+
+    .navbar__links {
+        padding: 0;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        width: 0;
+        justify-content: center;
+        height: 100vh;
+        position: absolute;
+        top: 0px;
+        right: 0;
+        background: var(--navbar-bg-color);
+        transform: translateX(110%);
+        transition: all .2s ease-in-out;
+    }
+
+
+    .show-nav .navbar__links {
+
+        width: 100vw;
+        transform: translateX(0);
+    }
+
+    .navbar__link {
+        transform: translateX(101%);
+        transition: all .2s ease-in-out;
+    }
+
+    .show-nav .navbar__link {
+        transform: translateX(0);
+    }
+
+    .navbar__link>a {
+        display: block;
+        padding: 1.3rem;
+        font-family: Arial, sans-serif;
+        font-weight: 900;
+        font-style: normal;
+        font-size: 1.4rem;
+        color: var(--navbar-color);
+        transition: all .2s ease-in-out;
+    }
+
+    .navbar__link>a:hover {
+        padding-left: 2rem;
+        letter-spacing: 5px;
+    }
+
+    /* Toggle menu */
+
+    .burger {
+        display: block;
+        position: relative;
+        padding: 0px;
+        width: 45px;
+        height: 45px;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+    }
+
+    .bar {
+        display: block;
+        width: 45px;
+        height: 4px;
+        border-radius: 3px;
+        background: var(--navbar-color);
+        transition: all .2s ease-in-out;
+    }
+
+    .bar::before,
+    .bar::after {
+        content: "";
+        width: 45px;
+        height: 4px;
+        position: absolute;
+        left: 0px;
+        background: var(--navbar-color);
+        border-radius: 3px;
+        transition: all .2s ease-in-out;
+    }
+
+    .bar::before {
+        transform: translateY(-12px)
+    }
+
+    .bar::after {
+        transform: translateY(12px)
+    }
+
+    .show-nav .bar {
+        width: 0;
+        background: transparent;
+    }
+
+    .show-nav .bar::before {
+        transform: rotate(45deg);
+    }
+
+    .show-nav .bar::after {
+        transform: rotate(-45deg);
+    }
+
+    /* Bonus - Animations */
+    .show-nav .first {
+        transition: all .2s ease-out;
+    }
+
+    .show-nav .second {
+        transition: all .2s ease-out;
+    }
+
+    .show-nav .third {
+        transition: all .2s ease-out;
+    }
+
+    .show-nav .four {
+        transition: all .2s ease-out;
+    }
+
+    .show-nav .fifth {
+        transition: all .2s ease-out;
+    }
+
+    .show-nav .sixth {
+        transition: all .2s ease-out;
+    }
+
+}
+
+
+/*--media query MENU small  - Bonus */
+@media screen and (min-width:768px) {
+    .navbar__link>a::after {
+        display: block;
+        content: "";
+        width: 0;
+        height: 1px;
+        background: var(--navbar-color);
+        transition: width .4s;
+    }
+
+    .navbar__link:hover>a::after {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+    
+    #menu img{
+        margin-left: 35vw;
+        width: 150px;
+    }
+
+    #dessert .prixDessert {
+        margin-left: 35vw;
+        width: 150px;
+    }
+
+    #pressions .happyHour{
+        margin-right: 30vw;
+    }
+
+    #cocktails .happyHour{
+        margin-right: 30vw;
+    }
+
+}
+
+
+@media screen and (min-width:1559px) {
+
+    .navbar .navbar__logo .logo {
+
+        width: 130px;
+        margin-top: 70px;
+        margin-left: 5px;
+        cursor: pointer;
+        z-index: 1000;
+
+    }
+
+    h1 {
+        font-size: 40px;
+        margin: auto;
+        width: 1000px;
+        margin-top: 170px;
+    }
+
+    .descr {
+
+        padding-left: 20px;
+    }
+
+    section {
+
+        width: 1000px;
+        height: auto;
+        margin: auto;
+        margin-top: 20px;
+        padding: 30px;
+    }
+
+
+    .prixkids {
+        position: absolute;
+        left: 68vw;
+        width: 150px;
+        transform: rotate(20deg);
+    }
+
+    .prixdessert {
+        position: absolute;
+        left: 68vw;
+        width: 150px;
+        transform: rotate(20deg);
+    }
+
+}

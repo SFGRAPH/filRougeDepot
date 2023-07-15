@@ -549,24 +549,12 @@ figcaption {
   padding: 15px;
   color: #ffffff;
   background: #006e3b;
-  /* border: 3px solid #ffd800; */
   border-radius: 20px;
   margin-left: 10px;
   margin-right: 10px;
 }
 
-/*footer {
-    width: 95vw;
-    height: 60px;
-    text-align: center;
-    font-size: 10px;
-    margin: auto;
-    margin-top: 5px;
-    background-image: url(media-source/source_image/SVG/deco-footer.svg);
-    background-position:center;
-    background-size:auto;
-    
-}*/
+
 
 
 
@@ -587,13 +575,6 @@ figcaption {
     width: 1000px;
   }
 
-  /*main {
-        width: 95%;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        
-    }*/
 
   .descr {
 
