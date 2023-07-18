@@ -157,7 +157,7 @@ ul {
   font-family: "arial", sans-serif;
   font-weight: 900;
   font-style: normal;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .burger {
@@ -959,7 +959,7 @@ body .contactMap iframe {
   font-weight: 900;
   color: #feedcd;
   text-shadow: 1px 3px 3px #000000;
-  opacity: 1;
+  opacity: 0;
 }
 
 .container-btns {
